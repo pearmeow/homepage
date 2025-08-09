@@ -12,15 +12,20 @@
 
 body {
     display: flex;
-    gap: 15vh 0;
     flex-direction: column;
+    gap: 10px;
     align-items: center;
 }
 
 header {
     padding: 20px;
     position: relative;
-    overflow: hidden;
+    max-width: 100%;
+}
+
+header>img {
+    box-shadow:
+        0px 2px 9px 1px grey;
 }
 
 header::before {
@@ -30,35 +35,61 @@ header::before {
     z-index: -1;
     width: 200%;
     height: 200%;
-    bottom: 25%;
+    bottom: 0%;
     left: 0%;
     transform-origin: bottom left;
-    transform: rotate(-35deg);
+    transform: rotate(-30deg);
+    box-shadow: 0px 2px 3px 0px grey;
 }
 
 header>p {
     z-index: 1;
-    max-width: var(--header-width);
+    max-width: 100%;
     position: relative;
 }
 
-
-.img-container>p {
+.name {
     position: absolute;
-    bottom: 5px;
+    bottom: 25px;
     left: 50%;
     color: white;
-    font-size: 55px;
+    font-size: 45px;
     white-space: nowrap;
     font-family: serif;
     z-index: 1;
     transform: translate(-50%);
 }
 
-.img-container>img {
+.about {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    font-family: serif;
+    z-index: 1;
+    width: 90%;
+    transform: translate(-50%, 100%);
+}
+
+header>img {
     max-width: 100%;
 }
 
-.img-container {
-    position: relative;
+.about>h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.about-space {
+    height: 15rem;
+}
+
+.links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.links>a {
+    width: 40px;
 }
