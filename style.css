@@ -1,13 +1,64 @@
+:root {
+    --header-width: 100vw;
+}
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
     margin: 0;
+    font-family: sans-serif, serif;
 }
 
 body {
-    padding: 10px;
     display: flex;
+    gap: 15vh 0;
     flex-direction: column;
     align-items: center;
+}
+
+header {
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    background-color: #2596be;
+    z-index: -1;
+    width: 200%;
+    height: 200%;
+    bottom: 25%;
+    left: 0%;
+    transform-origin: bottom left;
+    transform: rotate(-35deg);
+}
+
+header>p {
+    z-index: 1;
+    max-width: var(--header-width);
+    position: relative;
+}
+
+
+.img-container>p {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    color: white;
+    font-size: 55px;
+    white-space: nowrap;
+    font-family: serif;
+    z-index: 1;
+    transform: translate(-50%);
+}
+
+.img-container>img {
+    max-width: 100%;
+}
+
+.img-container {
+    position: relative;
 }
