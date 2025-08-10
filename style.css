@@ -21,6 +21,7 @@ header {
     padding: 20px;
     position: relative;
     max-width: 100%;
+    overflow: hidden;
 }
 
 header>img {
@@ -35,7 +36,7 @@ header::before {
     z-index: -1;
     width: 200%;
     height: 200%;
-    bottom: 0%;
+    bottom: 5px;
     left: 0%;
     transform-origin: bottom left;
     transform: rotate(-30deg);
@@ -46,6 +47,10 @@ header>p {
     z-index: 1;
     max-width: 100%;
     position: relative;
+}
+
+header>img {
+    max-width: 100%;
 }
 
 .name {
@@ -79,10 +84,6 @@ header>p {
     transform: translate(-50%, 100%);
 }
 
-header>img {
-    max-width: 100%;
-}
-
 .about>h1 {
     text-align: center;
     font-weight: 400;
@@ -97,4 +98,51 @@ header>img {
 
 .links>a {
     width: 40px;
+}
+
+main {
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 40px;
+    gap: 20px;
+    grid-auto-rows: auto;
+    max-width: 90%;
+}
+
+main>h1 {
+    font-weight: 400;
+    font-family: serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.project {
+    height: auto;
+}
+
+.project>.image-container {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.project>.image-container>img {
+    object-fit: fill;
+    max-width: 100%;
+}
+
+.project>p {
+    text-align: center;
+    max-width: 100%;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.description>p:last-child {
+    grid-column: 1 / 4;
+    overflow-wrap: break-word;
 }
