@@ -1,5 +1,6 @@
 :root {
     --header-width: 100vw;
+    font-size: 25px;
 }
 
 *,
@@ -11,6 +12,7 @@
 }
 
 body {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -156,4 +158,40 @@ main>h1 {
 .description>p:last-child {
     grid-column: 1 / 4;
     overflow-wrap: break-word;
+}
+
+footer {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    color: white;
+    background-color: #2596be;
+}
+
+footer>img {
+    max-width: 100%;
+}
+
+.contact {
+    padding: 15px;
+}
+
+.contact * {
+    font-family: serif;
+}
+
+.contact>h1 {
+    text-align: center;
+}
+
+.note {
+    font-size: 30px;
+}
+
+.note,
+.street,
+.phone,
+.email {
+    margin-top: 25px;
 }
