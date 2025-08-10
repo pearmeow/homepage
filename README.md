@@ -9,6 +9,7 @@ Features
 - [x] Responsive page design - reacts to screen size
 - [x] Links to my socials, but not any projects
 - [x] Somewhat accessible page
+- [x] Some random whitespace to the right...? That's a feature, not a bug!
 
 How to use this project
 -----------------------
