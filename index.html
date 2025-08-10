@@ -13,7 +13,7 @@
         <img src="./meow.jpg" alt="tuna sitting on a fridge">
         <p class="name">Tuna the cat</p>
         <div class="about-abs">
-            <img src="./meow.jpg" alt="tuna sitting on a fridge">
+            <img src="./square_meow.jpg" alt="tuna sitting on a fridge">
             <h1>About me
                 <p class="name-abs">Tuna the cat</p>
             </h1>
@@ -159,8 +159,14 @@
             <p class="note">Please get in touch if you think our work could be mutually beneficial!</p>
             <p class="street">Nailmaster's Hut</p>
             <p class="location">Kingdom's Edge, Hallownest</p>
-            <p class="phone">123 456 7890</p>
-            <p class="email">tunahasnoemail@cats.com</p>
+            <p class="email">
+                <img src="./email-outline.svg" alt="email">
+                123-456-7890
+            </p>
+            <p class="phone">
+                <img src="./cellphone.svg" alt="phone">
+                tunahasnoemail@cats.com
+            </p>
             <div class="links">
                 <a href="https://www.github.com/pearmeow" rel="noopener noreferrer">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
@@ -168,11 +174,15 @@
                 </a>
                 <a href="https://www.linkedin.com/in/pearmeow/" rel="noopener noreferrer">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
-                        alt="x">
+                        alt="linkedin">
                 </a>
             </div>
         </div>
-        <img src="./meow.jpg" alt="tuna sitting on a fridge">
+        <picture>
+            <source media="(width <= 1280px)" srcset="./horizontal_meow.jpg">
+            <source media="(width >  1280px)" srcset="./cropped_meow.jpg">
+            <img src="./horizontal_meow.jpg" alt="tuna loafing">
+        </picture>
     </footer>
 </body>
 
